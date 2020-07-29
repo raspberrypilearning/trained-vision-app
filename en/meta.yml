@@ -1,0 +1,16 @@
+title: Testing your computer's vision
+hero_image: images/banner.png
+description: Learn how to use a Tensorflow image classifiaction model in Python to predict what appears in a picture.
+version: 4
+listed: false
+copyedit: false
+last_tested: "2020-06-12"
+steps:
+  - title: Introduction
+  - title: Get started with Google Colab
+  - title: Load your model and image
+  - title: Use the model to predict an image
+  - title: Experiment with your program
+    challenge: true
+  - title: What's next?
+
