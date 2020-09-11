@@ -1,4 +1,6 @@
-import cv2
+import time
+
+import picamera
 import tensorflow as tf
 import numpy as np
 from guizero import App, Box, Text, PushButton, Picture
@@ -27,17 +29,11 @@ def get_player_throw():
     return 'rock'
 
 
-def capture_image(image_file_name, brightness = 60):
-    cam = cv2.VideoCapture(0)
-
-    tmp, frame = cam.read()
-
-    res = cv2.convertScaleAbs(frame, alpha = 1, beta = brightness)
-
-    cv2.imwrite(image_file_name, res)
-
-    cam.release()
-
+def capture_image(image_file_name):
+    with picamera.PiCamera() as camera:
+        camera.resolution = (1024, 768)
+        time.sleep(2)
+        camera.capture(image_file_name)
 
 def play_game():
     capture_image(IMG_NAME)
