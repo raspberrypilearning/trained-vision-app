@@ -10,7 +10,7 @@ Train the model by clicking the 'Train Model' button. That was easy!
 
 --- /task ---
 
-The training will take a short time, during which you can watch Teachable Machine count the epochs it's running through. Once the training is complete, you'll see a preview of the model where you can test it by making gestures at your camera and seeing how likely your model thinks that gesture is to be each of 'rock', 'paper', and 'scissors'. The highest percentage indicates the 'guess' that your game would make if it saw that gesture. 
+The training will take a short time, during which you can watch Teachable Machine count the epochs it's running through. **You need to leave your browser open on the Teachable Machine tab, or the model will stop training.** Once the training is complete, you'll see a preview of the model where you can test it by making gestures at your camera and seeing how likely your model thinks that gesture is to be each of 'rock', 'paper', and 'scissors'. The highest percentage indicates the 'guess' that your game would make if it saw that gesture. 
 
 
 --- task ---

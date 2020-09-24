@@ -2,13 +2,14 @@ import cv2
 import tensorflow as tf
 import numpy as np
 from guizero import App, Box, Text, PushButton, Picture
-from random import choice
 
 IMG_NAME = 'throw.jpg'
 
 IMAGE_SIZE = 224
 
 THROWS = ['rock', 'paper', 'scissors']
+
+WINNING_THROWS = {'rock': 'paper', 'paper': 'scissors', 'scissors': 'rock'}
 
 LOSSES = [
     {'player': 'rock', 'computer': 'paper'},
@@ -41,9 +42,11 @@ def capture_image(image_file_name, brightness = 60):
 
 def play_game():
     capture_image(IMG_NAME)
+    player_throw = get_player_throw()
     game = {
-        'player': get_player_throw(),
-        'computer': choice(THROWS)
+        'player': player_throw,
+        # Have the computer cheat to win the game
+        'computer': WINNING_THROWS[player_throw]
     }
 
     if game in LOSSES:

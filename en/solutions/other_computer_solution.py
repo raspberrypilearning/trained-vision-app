@@ -30,19 +30,21 @@ def get_player_throw():
     image = tf.keras.preprocessing.image.img_to_array(image)
     image = np.expand_dims(image, axis=0)
 
-    prediction = model.predict(image)
+    prediction_result = model.predict(image)
 
-    prediction = THROWS[np.argmax(prediction[0])]
+    best_prediction = THROWS[np.argmax(prediction_result[0])]
 
-    return prediction
+    return best_prediction
 
 
-def capture_image(image_file_name):
+def capture_image(image_file_name, brightness = 60):
     cam = cv2.VideoCapture(0)
 
     tmp, frame = cam.read()
 
-    cv2.imwrite(image_file_name, frame)
+    res = cv2.convertScaleAbs(frame, alpha = 1, beta = brightness)
+
+    cv2.imwrite(image_file_name, res)
 
     cam.release()
 

@@ -1,7 +1,11 @@
 ## Introduction
 
 ### What you will make
-You will create a game of rock, paper, scissors that you can play against the computer by making the gestures with your hands and having the computer recognise them.
+You will create a game of rock, paper, scissors that you can play against the computer by making the gestures with your hands and having the computer recognise them. In this particular version of the game, the computer is going to cheat — by recognising the player's move and choosing the one that will beat it!
+
+Essentially, you'll be creating a simpler version of the brain of this awesome robot.
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Qb5UIPeFClM?controls=0&amp;start=3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 --- collapse ---
 ---

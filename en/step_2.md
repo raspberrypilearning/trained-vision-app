@@ -4,7 +4,7 @@ This project has two parts to it: building a model on Teachable Machine, and the
 
 --- task ---
 
-Open the [Teachable Machine image model training page](https://teachablemachine.withgoogle.com/train/image){target:blank} in a new tab in your browser.
+Open the [Teachable Machine image model training page](https://teachablemachine.withgoogle.com/train/image){:target="_blank"} in a new tab in your browser.
 
 --- /task ---
 

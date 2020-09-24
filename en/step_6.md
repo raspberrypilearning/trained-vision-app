@@ -36,15 +36,19 @@ def get_player_throw():
 
     prediction_result = model.predict(image)
 
-    best_prediction = THROWS[np.argmax(prediction[0])]
+    best_prediction = THROWS[np.argmax(prediction_result[0])]
 
-    return prediction
+    return best_prediction
 ```
 
 --- /task ---
 
-To understand each step in this process, you can review [project 1](#), particulary the 'Load your model and image' and 'Use the model to predict an image' steps. In short: 
+To understand each step in this process, you can review the [Testing your computer's vision project](https://projects.raspberrypi.org/en/projects/testing-vision/), particulary the 'Load your model and image' and 'Use the model to predict an image' steps. In short: 
 
   * All the lines starting with `image` are working to convert the image to the right format for the model
   * The `prediction_result` line is getting the model's prediction in the form of numbers representing confidence in different guesses
   * The `best_prediction` line is taking the prediction with the highest value (`np.argmax` gets the index of the highest value in a list) and using it to look up the label of that prediction in the THROWS list.
+
+--- save ---
+
+Run the program and play with it a few times! If you're not happy with the quality of its guesses, think about any differences between the training data and the inputs you're giving your game — maybe the light has changed, or you're wearing different clothes, etc. If you need to, you can record more training data in teachable machine, train your model again, and then download it and replace the model you're using in the game with an updated version.
