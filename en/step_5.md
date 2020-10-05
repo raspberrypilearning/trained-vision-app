@@ -1,4 +1,4 @@
-## Get the game starter code
+## Set up your game
 
 Your completed model now needs to be inserted into a desktop Python application to make a working game. A simple version of 'rock, paper, scissors', where the computer will use the player's guess to cheat, has been written for you to use. You are focusing on the machnine learning aspects of the project. However, there is a lot of room to improve the game's interface. If you want to learn about how to do this, check out the [Getting started with GUIs](https://projects.raspberrypi.org/en/projects/getting-started-with-guis) project. You can also make chages to the computer's method of choosing whether to play 'rock', 'paper', or 'scissors' if you want to create a game where th player always wins, or where the computer chooses at random.
 

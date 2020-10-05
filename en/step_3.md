@@ -14,6 +14,8 @@ You will see the class expand to show a preview from your computer's camera (you
 
 While holding down the 'Hold to Record' button with one hand, make the 'rock' gesture with the other, ensuring that it appears in the preview. Move your hand around and change the shape of the gesture, to ensure there is some variety in the training data.
 
+![](images/training.gif)
+
 If you stop recording, don't worry, you can start again by holding down the 'Hold to Record' button. Any new images will just be added to the existing ones.
 
 You should see your images appear in the 'Add Image Samples' section on the right. Keep recording until you have at least 300 of them. More images will usually improve the quality of the model you create, so recording several hundred is a good idea, if you have time.

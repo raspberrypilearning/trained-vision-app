@@ -8,7 +8,7 @@ Unzip `converted_keras.zip` and open the resulting folder. Copy the `keras_model
 
 --- /task ---
 
-Note that the `labels.txt` file in the unzipped `converted_keras` directory contains the list of human-readable lables and the node numbers they match to on the model's output layer. For a larger number of categories you would have Python read this file and automatically load them, but as there are only three categories in this model, the lables have already been included in the game code for you, in the list called `THROWS`.
+Note that the `labels.txt` file in the unzipped `converted_keras` directory contains the list of human-readable lables and the node numbers they match to on the model's output layer. For a larger number of categories you would have Python read this file and automatically load them but, as there are only three categories in this model, the lables have already been included in the game code for you, in the list called `THROWS`.
 
 Now that your game code and your model are in the same directory, you can load it into the game.
 
