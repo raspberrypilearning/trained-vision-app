@@ -4,13 +4,13 @@ Now that your data is recorded, it's time to train your model!
 
 --- task ---
 
-Train the model by clicking the 'Train Model' button. That was easy!
+Train the model by clicking the **Train Model** button. That was easy!
 
-![](images/tm_train_model.png)
+![Train Model button](images/tm_train_model.png)
 
 --- /task ---
 
-The training will take a short time, during which you can watch Teachable Machine count the epochs it's running through. **You need to leave your browser open on the Teachable Machine tab, or the model will stop training.** Once the training is complete, you'll see a preview of the model where you can test it by making gestures at your camera and seeing how likely your model thinks that gesture is to be each of 'rock', 'paper', and 'scissors'. The highest percentage indicates the 'guess' that your game would make if it saw that gesture. 
+The training will take a short time, during which you can watch the Teachable Machine count the epochs it's running through. **You need to leave your browser open on the Teachable Machine tab, or the model will stop training.** Once the training is complete, you'll see a preview of the model where you can test it by making gestures at your camera and seeing how likely your model thinks that gesture is to be each of 'rock', 'paper', and 'scissors'. The highest percentage indicates the 'guess' that your game would make if it saw that gesture. 
 
 
 --- task ---
@@ -32,16 +32,16 @@ Once your model is working well enough — it will never be right all the time, 
 
 --- task ---
 
-Click the 'Export Model' button in the 'Preview' section.
+Click the **Export Model** button in the 'Preview' section.
 
-![](images/tm_export_model.png)
+![Export Model button](images/tm_export_model.png)
 
-In the screen that appears, select the 'Tensorflow' tab and, making sure that 'Model conversion type' is set to 'Keras', click the 'Download my model' button.
+In the screen that appears, select the 'Tensorflow' tab and, making sure that 'Model conversion type' is set to 'Keras', click the **Download my model** button.
 
-![](images/tm_download_model.png)
+![Tensorflow tab](images/tm_download_model.png)
 
 **Make sure you remember where you save the model, you'll need it in a few minutes!**
 
 --- /task ---
 
-Now that you have your model, you're ready to start building your game with it.
+Now that you have your model, you're ready to build your game with it.
