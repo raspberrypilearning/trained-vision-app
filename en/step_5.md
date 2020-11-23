@@ -174,6 +174,6 @@ Then press the Return key to run the program.
 
 It may take a moment, but when your program runs you should see something like the image below.
 
-![](images/app_start.png)
+![White screen with the words 'Ready to play?' at the top of the page and a Play! button at the bottom of the page](images/app_start.png)
 
 Now that you have the game running, it's time to connect your model to it.
