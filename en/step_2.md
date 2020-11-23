@@ -14,13 +14,13 @@ This is an untrained model, with two classes. Of course, since you're going to n
 
 --- task ---
 
-Click the 'Add a class' button to add a thrid class to your model.
+Click the 'Add a class' button to add a third class to your model.
 
 ![](images/tm_add_class.png)
 
 --- /task ---
 
-Next, you need to give your classes proper labels that match waht they're going to be trained to recognise.
+Next, you need to give your classes proper labels that match what they're going to be trained to recognise.
 
 --- task ---
 
