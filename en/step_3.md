@@ -1,22 +1,22 @@
 ## Collect your training data
 
-Now that you have your your classes set up, you need to add some data to train them with. Each class has two options under 'Add Image Samples': 'Webcam' and 'Upload'. If you had a large collection on photographs of people making the 'rock', 'paper', and 'scissors' gestures on your computer you could upload them. However, as you probably don't have that, you're going to use the 'Webcam' option to record some images now. If you are using a Raspberry Pi with a camera, once you have [set up the camera](https://projects.raspberrypi.org/en/projects/getting-started-with-picamera) it will function as a webcam.
+Now that you have your classes set up, you need to add some data to use to train them. Each class has two options under 'Add Image Samples': **Webcam** and **Upload**. If you had a large collection of photographs of people making the 'rock', 'paper', and 'scissors' gestures on your computer, you could upload them. However, as you probably don't have that, you're going to use the **Webcam** option to record some images now. If you are using a Raspberry Pi with a camera, once you have [set up the camera](https://projects.raspberrypi.org/en/projects/getting-started-with-picamera) it will function as a webcam.
 
-Click on the 'Webcam' button for the 'rock' class.
+Click on the **Webcam** button for the 'rock' class.
 
 --- /task ---
 
-You will see the class expand to show a preview from your computer's camera (you may need to grant the teachable machine website permission to access your camera) and a 'Hold to Record' button.
+You will see the class expand to show a preview from your computer's camera (you may need to grant the Teachable Machine website permission to access your camera) and a **Hold to Record** button.
 
 ![](images/tm_webcam_images.png)
 
 --- task ---
 
-While holding down the 'Hold to Record' button with one hand, make the 'rock' gesture with the other, ensuring that it appears in the preview. Move your hand around and change the shape of the gesture, to ensure there is some variety in the training data.
+While holding down the **Hold to Record** button with one hand, make the 'rock' gesture with the other, ensuring that it appears in the preview. Move your hand around and change the shape of the gesture, to ensure there is some variety in the training data.
 
 ![](images/training.gif)
 
-If you stop recording, don't worry, you can start again by holding down the 'Hold to Record' button. Any new images will just be added to the existing ones.
+If you stop recording, don't worry, you can start again by holding down the **Hold to Record** button. Any new images will just be added to the existing ones.
 
 You should see your images appear in the 'Add Image Samples' section on the right. Keep recording until you have at least 300 of them. More images will usually improve the quality of the model you create, so recording several hundred is a good idea, if you have time.
 
