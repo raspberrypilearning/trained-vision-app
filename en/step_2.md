@@ -1,6 +1,6 @@
 ## Get started with Teachable Machine
 
-This project has two parts to it: building a model on Teachable Machine, and then using that model in a game you'll build on your computer. Teachable Machine is a tool made by Google that creates machine learning models in your browser. You'll create a model to recognise images, but it can also create models that recognise sounds, or body poses.
+This project has two parts to it: first you build a model on Teachable Machine, and then you use that model in a game you'll build on your computer. Teachable Machine is a tool made by Google that creates machine learning models in your browser. You'll create a model to recognise images, but it can also create models that recognise sounds, or body poses.
 
 --- task ---
 
