@@ -43,11 +43,11 @@ def get_player_throw():
 
 --- /task ---
 
-To understand each step in this process, you can review the [Testing your computer's vision project](https://projects.raspberrypi.org/en/projects/testing-vision/) project, particularly the 'Load your model and image' and 'Use the model to predict an image' steps. In short: 
+To understand each step in this process, you can review the [Testing your computer's vision project](https://projects.raspberrypi.org/en/projects/testing-vision/), particularly the 'Load your model and image' and 'Use the model to predict an image' steps. In short: 
 
   * All the lines starting with `image` work to convert the image to the right format for the model
   * The `prediction_result` line gets the model's prediction in the form of numbers representing confidence in different guesses
-  * The `best_prediction` line takes the prediction with the highest value (`np.argmax` gets the index of the highest value in a list) and uses it to look up the label of that prediction in the THROWS list.
+  * The `best_prediction` line takes the prediction with the highest value (`np.argmax` gets the index of the highest value in a list) and uses it to look up the label of that prediction in the THROWS list
 
 --- save ---
 
