@@ -37,7 +37,7 @@ title: What you will learn
 ---
 
 + How to create and train a machine vision model quickly using Teachable Machine
-+ What you need to consider when creating a model, to ensure it works under the circumstances it will be used under
++ What you need to consider when you create a model to make sure that it works in practice
 + How to include a model you've created in a desktop application
 
 --- /collapse ---
