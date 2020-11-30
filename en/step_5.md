@@ -162,7 +162,7 @@ python project.py
 
 Then press the Return key to run the program.
 
-### If you're using a Mac
+### If you're using macOS
 ```
 python3 project.py
 ```
