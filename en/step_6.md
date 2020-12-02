@@ -43,7 +43,7 @@ def get_player_throw():
 
 --- /task ---
 
-To understand each step in this process, you can review the [Testing your computer's vision project](https://projects.raspberrypi.org/en/projects/testing-vision/), particularly the 'Load your model and image' and 'Use the model to predict an image' steps. In short: 
+To understand each step in this process, you can review the [Testing your computer's vision project](https://projects.raspberrypi.org/en/projects/testing-your-computers-vision/), particularly the 'Load your model and image' and 'Use the model to predict an image' steps. In short: 
 
   * All the lines starting with `image` work to convert the image to the right format for the model
   * The `prediction_result` line gets the model's prediction in the form of numbers representing confidence in different guesses
