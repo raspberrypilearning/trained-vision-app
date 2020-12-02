@@ -4,9 +4,9 @@ Now that your data is recorded, it's time to train your model!
 
 --- task ---
 
-Train the model by clicking the 'Train Model' button. That was easy!
+Train the model by clicking the **Train Model** button. That was easy!
 
-![](images/tm_train_model.png)
+![Train Model button](images/tm_train_model.png)
 
 --- /task ---
 
@@ -15,7 +15,7 @@ The training will take a short time, during which you can watch Teachable Machin
 
 --- task ---
 
-Spend some time testing your model's preview, to see if it usually predicts the gesture you're making correctly.
+Spend some time testing your model's preview, to see if it usually predicts the gesture you make correctly.
 
 --- /task ---
 
@@ -28,20 +28,20 @@ If your model doesn't work as you'd like, there are a few things you can try:
 
 --- /task ---
 
-Once your model is working well enough — it will never be right all the time, but being right most of the time is pretty good — it's time to export the model so you can use it as part of your game.
+Once your model works well enough — it will never be right all the time, but being right most of the time is pretty good — it's time to export the model so you can use it as part of your game.
 
 --- task ---
 
-Click the 'Export Model' button in the 'Preview' section.
+Click the **Export Model** button in the 'Preview' section.
 
-![](images/tm_export_model.png)
+![Export Model button](images/tm_export_model.png)
 
-In the screen that appears, select the 'Tensorflow' tab and, making sure that 'Model conversion type' is set to 'Keras', click the 'Download my model' button.
+In the screen that appears, select the 'Tensorflow' tab and, make sure that 'Model conversion type' is set to 'Keras', and click the **Download my model** button.
 
-![](images/tm_download_model.png)
+![Tensorflow tab](images/tm_download_model.png)
 
 **Make sure you remember where you save the model, you'll need it in a few minutes!**
 
 --- /task ---
 
-Now that you have your model, you're ready to start building your game with it.
+Now that you have your model, you're ready to build your game with it.
