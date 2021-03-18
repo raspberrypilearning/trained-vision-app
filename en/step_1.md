@@ -1,15 +1,15 @@
 ## Introduction
 
-Create a product — a tool, app, or website — that uses machine vision to do something cool.
+Create your own machine vision model and Python application to identify a user's images.
 
 
 ### What you will make
-You will use a pre-trained image classification model to build your product. You’ll combine this model with code for either:
- + A web application, built with Flask
- + A command-line tool
- + A desktop application, built with guizero
+You will combine a model you train using Google's Teachable Machine with a Python program you create on your computer, to build an application that can either:
 
-![An image of a desktop application, asking the user to provide an image for identification](images/initial_application.png)
+ + Take a picture with a user's webcam and classify it, then share that classifcation with the user
+ + Take an image file provided by the user, and classify it, then share that classifcation with the user
+
+[[HOW TO MAKE COOL IMAGE?]]
 
 ### What you will learn
 You will learn:
