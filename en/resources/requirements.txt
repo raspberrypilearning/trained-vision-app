@@ -1,5 +1,0 @@
-guizero[images]
-numpy
-opencv-python
-Pillow
-tensorflow==2.2.0

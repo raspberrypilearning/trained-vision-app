@@ -1,54 +1,78 @@
-# Connect your model to the game
+## Share
 
-First, find the model you downloaded from Teachable Machine. It should be in a file called `converted_keras.zip`.
+As well as showing friends, family members, or people in a coding club, you can share your code with the world by putting it on GitHub. GitHub is a website where you can use a tool called Git to store and share coding projects, which Git calls **repositories**, or **repos** for short. Git, and GitHub, are used by millions of professional computer programmers every day. Every project on this website is stored on GitHub.
 
---- task ---
+#### Be careful what you share
 
-Unzip `converted_keras.zip` and open the resulting folder. Copy the `keras_model.h5` file to the project directory that contains the code for the game.
+GitHub is on the web, so you should be just as careful about the kind of information you share there as you would on any other website or app: Don't include photos of yourself, or your friends; Don't include passwords or usernames; If you're ever unsure about sharing anything online, check with an adult you trust first.
 
---- /task ---
+#### Sharing your code on GitHub
 
-Note that the `labels.txt` file in the unzipped `converted_keras` directory contains the list of human-readable labels and the node numbers they match to on the model's output layer. For a larger number of categories, you would have Python read this file and automatically load them but, as there are only three categories in this model, the labels have already been included in the game code for you, in the list called `THROWS`.
+To share your code on GitHub you'll need to setup a GitHub account (or log into one you already have), create a new repository for this project, and then **commit** (upload) your code to the repository.
 
-Now that your game code and your model are in the same directory, you can load it into the game.
+--- collapse ---
+---
+title: Getting a GitHub account
+---
+If you're over the age of thirteen, you can register for your own GitHub account. If you're not, you'll need a parent or guardian to set up an account and allow you to use it.
 
---- task ---
+Create an account by filling in the relevant details on the [GitHub site](https://github.com/join).
+--- /collapse ---
 
-Find the function `get_player_throw`. On a line above it, add the following:
+--- collapse ---
+---
+title: Creating a repository
+---
 
-```python
-model = tf.keras.models.load_model('keras_model.h5', compile=False)
-```
+Once you have an account go to the [GitHub site](https://github.com/), make sure you're signed in, and click on the 'New Repository' button, which appears on the left.
 
---- /task ---
+![The GitHub 'New Repository' button](images/github_new_repo.png)
 
-This will load your model into the game. Now you need to add a function that uses the model to get players' throws — their choice of 'rock', 'paper', or 'scissors'.
+In the screen that appears, you will need to give your repository a name. You can also add a description, if you like. 
 
---- task ---
+![The GitHub repository creation form](images/github_project_creation.png)
 
-Update the `get_player_throw` function with the following code which will load the image the game has captured, then pass it to the model for a prediction. That prediction is then returned, so it can be used by the game code, instead of the default 'rock' that the game came with!
+For now, leave the repository set to public, and don't worry about any of the three checkboxes. Just click the 'Create repository' button. 
+--- /collapse ---
 
-```python
-def get_player_throw():
-    image = tf.keras.preprocessing.image.load_img(IMG_NAME, target_size=(IMAGE_SIZE, IMAGE_SIZE))
-    image = tf.keras.preprocessing.image.img_to_array(image)
-    image = np.expand_dims(image, axis=0)
+--- collapse ---
+---
+title: Making your first commit
+---
 
-    prediction_result = model.predict(image)
+Once the repository has been created, you'll be shown a number of options on how to get started. In the 'Quick setup' section, choose the 'uploading an existing file' link.
 
-    best_prediction = THROWS[np.argmax(prediction_result[0])]
+![The 'Quick setup' section, with the 'uploading an existing file' link highlighted](images/github_upload_link.png)
 
-    return best_prediction
-```
+You will then be presented with a screen that gives you options to createa a commit. Drag any files that form part of your project into the repository — again, remembering to be careful about what you put on the web — and then give the commit a name. Since you can commit new versions of files later, the name of the commit helps you remember when you last changed a particular file. Since this is the very first commit of the project, you can pick a simple name like 'Version 1', 'First commit', etc. You can also add a more detailed description of the commit, if you like.
 
---- /task ---
+![The form for creating a commit](images/github_commit.png)
 
-To understand each step in this process, you can review the [Testing your computer's vision project](https://projects.raspberrypi.org/en/projects/testing-your-computers-vision/), particularly the 'Load your model and image' and 'Use the model to predict an image' steps. In short: 
+Then click the 'Commit changes' button to save your commit!
 
-  * All the lines starting with `image` work to convert the image to the right format for the model
-  * The `prediction_result` line gets the model's prediction in the form of numbers representing confidence in different guesses
-  * The `best_prediction` line takes the prediction with the highest value (`np.argmax` gets the index of the highest value in a list) and uses it to look up the label of that prediction in the THROWS list
+--- /collapse ---
 
---- save ---
 
-Run the program and play with it a few times! If you're not happy with the quality of its guesses, think about any differences between the training data and the inputs you give your game — maybe the light has changed, or you're wearing different clothes, etc. If you need to, you can record more training data in Teachable Machine, train your model again, and then download it and replace the model in the game with an updated version.
+#### Making changes to your repository
+Once you've made some changes to your project, you might want to update the version of it you're sharing in your repository. To change your repository, all you need to do is upload your files again, as part of a new commit.
+
+--- collapse ---
+---
+title: Committing changes to your repository
+---
+
+On the GitHub page for your repository (which you can find on the left of [github.com](https://github.com) if you're signed in), you will be able to choose to upload files using the 'Add file' menu.
+
+![The 'Add file' menu](images/github_add_file.png)
+
+You will then be presented with a screen that gives you options to createa a commit. Drag any files that form part of your project into the repository — again, remembering to be careful about what you put on the web — and then give the commit a name. Don't worry about whether or not you've changed a file, GitHub will figure that out for you.
+
+![The form for creating a commit](images/github_commit.png)
+
+Then click the 'Commit changes' button to save your commit, and update your project.
+
+--- /collapse ---
+
+#### Sharing your repository
+
+You can share your repository by sharing the URL to it. It should look something like [https://github.com/raspberrypilearning/amazing-image-identifier](https://github.com/raspberrypilearning/amazing-image-identifier) but with your GitHub username in place of `raspberrypilearning` and your repository's name in place of `amazing-image-identifier`. Because you left the repository set to public when you created it, anyone should be able to see it.

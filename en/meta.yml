@@ -7,9 +7,10 @@ copyedit: true
 last_tested: "2020-06-12"
 steps:
   - title: Introduction
-  - title: Get started with Teachable Machine
-  - title: Collect your training data
-  - title: Create your model
-  - title: Set up your game
-  - title: Connect your model to the game
+  - title: Get setup
+  - title: Get inspiration
+  - title: Make your model
+  - title: Make your application
+  - title: Share
+  - title: Reflect
 

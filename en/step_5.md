@@ -1,178 +1,174 @@
-## Set up your game
+## Make your application
 
-Your completed model now needs to be inserted into a desktop Python application to make a working game. A simple version of rock, paper, scissors, where the computer will use the player's guess to cheat, has been written for you to use. You are focusing on the machine learning aspects of the project. However, there is a lot of room to improve the game's interface. If you want to learn about how to do this, check out the [Getting started with GUIs project](https://projects.raspberrypi.org/en/projects/getting-started-with-guis). You can also make changes to the computer's method of choosing whether to play 'rock', 'paper', or 'scissors', if you want to create a game where the player always wins, or where the computer chooses at random.
-
-First, you need to download and set up the starter file for the project.
+The application you'll create as part of this project uses the model you've trained to classify an image that is either contained in a file stored on your computer, or captured from your comptuer's webcam. Because you're creating your own model 
 
 --- collapse ---
 ---
-title: For Windows
+title: Creating a Python program on your computer
 ---
 
---- task ---
-Download the [starter zip file](http://rpf.io/trained-vision-app-go) and unzip it somewhere you'll remember on your computer. If you can't think of a location, just put it on your desktop. This isn't the best place to keep things in the long term, but it's fine when you're working on them.
---- /task ---
+Open your programmer's text editor, create a  new file, and save it somewhere on your computer with a name that ends in `.py`. For example,  `project.py`.
 
-Next, you need to install the libraries you will use in this project. For this, you'll need to use the **command line interface** (CLI) — a program that controls your computer by typing text commands into a window. The command line interface is called 'command prompt' in Windows.
-
-In the CLI, you don't access files by clicking to open them, or the directories (folders) they live in. You need to know the **path** to the file. It's like a set of directions, either from where you are currently located on the computer — called a **relative path** — or from the root of the computer's hard drive — called an **absolute path**. You'll need to find the path to the directory you've just unzipped for this next step.
-
-#### Finding the path to a directory on Windows
-
-The easiest way to find the path to a directory you know in Windows is to open the folder in Windows Explorer, as you would normally, and click into the navigation bar at the top of the window. The full path for the folder should become visible and you can then copy it.
-
-![The Windows Explorer navigation bar for a folder, with the path highlighted.](images/windows_path.png)
-
---- task ---
-
-In the CLI, navigate to the directory you just unzipped by entering the following command, and replace `[directory_path]` with the path to your directory.
-
-```batch
-cd [directory_path]
-```
-
---- /task ---
-
-Now that you have a CLI in the right directory, you can run Python commands with the files in it. 
-
-The command to install the libraries you need uses **pip**, a tool to fetch Python code written by other people from the internet and set it up so you can use it in your projects. It's important to use pip to install libraries rather than just downloading them: some libraries need other libraries to work (these libraries are called their **dependencies**) and pip will automatically install those too.
-
-Conveniently, pip can be given a list of all the libraries a project needs, and told to install them all at once. These are usually included in a file called `requirements.txt`, as they have been with the starter code provided here.
-
---- task ---
-
-Run this command on your CLI to install the libraries you'll need. It may take a while to run, as it will have to download the libraries from the internet and some of them are quite large.
-
-```bash
-pip install requirements.txt 
-```
-
---- /task ---
-
+**Remember the path to the location you saved the program in. You'll need it to run the program later!**
 --- /collapse ---
-
 
 --- collapse ---
 ---
-title: For macOS
+title: Running a Python program from the command line
 ---
-
-To install the libraries and other files you're going to be using in this project, you'll need to use the **command line interface** (CLI) — a program that controls your computer by typing text commands into a window. The command line interface is called 'terminal' in macOS.
-
-In the CLI, you don't access files by clicking to open them, or the directories (folders) they live in. You need to know the **path** to the file. It's like a set of directions, either from where you are currently located on the computer — called a **relative path** — or from the root of the computer's hard drive — called an **absolute** path. You need to find the path to the directory you've just unzipped for this next step.
-
-There are also some special paths, that are sorts of shortcuts in the system, and you're going to be using one of them, called the **home directory**. Every user on a computer gets their own home directory to store their files, and it is accessed using a special character called the tilde (`~`).
-
---- task ---
-
-Open the CLI on your computer and type the command below in:
+Using the same command line interface (CLI) you used to install the software earlier, you can run a Python program by using the `cd` command to navigate to the directory your program is in and then entering running it with the `python` command on Windows, or the `python3` command on Mac OS or Liunx, like so:
 
 ```bash
-cd ~
-```
-Now press the Return key.
-
---- /task ---
-
-You are now located in your home directory, and can install the files needed for this project there. Because this can be a complex process, a program to handle the installation for you has been created. Here are the [details of this program](http://rpf.io/proj-rps), but be aware that it's written in a language called **bash script**, and won't look much like Python.
-
---- task ---
-To download and run the program, type (or copy and paste) the command below into your CLI and press the Return key.
-
-```bash
-curl -L http://rpf.io/proj-rps | sudo bash -s $USER
-```
-
---- /task ---
-
-The script may take several minutes, or more, to complete the setup depending on the speed of your computer and your internet connection. Once it has finished, you will have a new directory inside your home directory, called `amazing_image_identifier`. This is the directory you'll work in.
-
---- task ---
-
-To change directory to the `amazing_image_identifier` directory, type the following command into your CLI and press the Return key.
-
-```bash
-cd amazing_image_identifier
-```
-
---- /task ---
-
---- /collapse ---
-
-
-
---- collapse ---
----
-title: For Linux (including Raspberry Pi)
----
-
-To install the libraries and other files you'll use in this project, you need to use the **command line interface** (CLI) — a program that controls your computer by typing text commands into a window. The command line interface is called 'terminal' in Linux.
-
-In the CLI, you don't access files by clicking to open them, or the directories (folders) they live in. You need to know the **path** to the file. It's like a set of directions, either from where you are currently located on the computer — called a **relative path** — or from the root of the computer's hard drive — called an **absolute** path. You need to find the path to the directory you've just unzipped for this next step.
-
-There are also some special paths, that are sorts of shortcuts in the system, and you're going to be using one of them, called the **home directory**. Every user on a computer gets their own home directory to store their files, and it is accessed using a special character called the tilde (`~`).
-
---- task ---
-
-Open the CLI on your computer and type the command below in:
-
-```bash
-cd ~
-```
-Now press the Return key.
-
---- /task ---
-
-You are now located in your home directory, and can install the files needed for this project there. Because this can be a complex process, a program to handle the installation for you has been created. Here are the [details of this program](http://rpf.io/proj-rps), but be aware that it's written in a language called **bash script**, and won't look much like Python.
-
---- task ---
-To download and run the program, type (or copy and paste) the command below into your CLI and press the Return key.
-
-```bash
-curl -L http://rpf.io/proj-rps | sudo bash -s $USER
-```
-
---- /task ---
-
-The script may take several minutes, or more, to complete the setup depending on the speed of your computer and your internet connection. Once it has finished, you will have a new directory inside your home directory, called `rps_by_hand`. This is the directory you'll work in.
-
---- task ---
-
-To change directory to the `rps_by_hand` directory, type the following command into your CLI and press the Return key.
-
-```bash
-cd rps_by_hand
-```
-
---- /task ---
-
---- /collapse ---
-
-There's a lot of code already provided for you, but it's all to create the game and capture an image from your computer's camera. First, run the program as it is to get an idea of how the game will work.
-
---- task ---
-
-Go back to your CLI window and type the following command to run the program. Remember it, as you'll need to run the program several times.
-
-### If you're using Windows or Linux
-
-```
 python project.py
 ```
 
-Then press the Return key to run the program.
+But replace `project.py` with whatever you call the file you're writing your program in.
+--- /collapse ---
 
-### If you're using macOS
+--- collapse ---
+---
+title: Including library code in your program
+---
+Libraries are collections of code written by other programmers, which have been packaged so you can easily install them and then include them in your own programs. Several libraries you might find useful for this project were installed when you ran the setup script.
+
+To use library code, you need to import it into your program, using import statements, like this:
+```python
+import tensorflow as tf
 ```
-python3 project.py
+Note that you can use extra keywords, like `as` to rename a library with a longer name, so you don’t have to keep typing it.
+
+Usually, programmers try to put all of their imports at the start of their program, and keep all imports from the same library on the same line, separated by commas.
+
+--- /collapse ---
+
+### Getting an image from your users
+
+--- collapse ---
+---
+title: Capturing an image from the user's camera — Raspberry Pi
+---
+You can use this function to capture an image using the `picamera` library. You may need to [set up the camera](https://projects.raspberrypi.org/en/projects/getting-started-with-picamera) before you can use it like this. You'll also need to decide where on your computer you want to store the image the camera records, so you can provide it to the classifer later. It makes sense to create a variable with that file path and pass it to both this function, and the image classification function.
+
+```python
+import time
+import picamera
+
+def capture_image(image_file_path):
+    with picamera.PiCamera() as camera:
+        # Set the size of the image to capture
+        camera.resolution = (1024, 768)
+        # Wait for two seconds, so the user has a chance to pose/hold up an obect/etc.
+        time.sleep(2)
+        # Capture the image to the file location
+        camera.capture(image_file_path)
 ```
 
-Then press the Return key to run the program.
+ + `image_file_path` is the path to where you want to store the captured image on your computer. This can be a relative path, like `captured_image.jpg`, or an absolute path, like `/Users/raspberry/projects/machine_vision/captured_image.jpg`.
 
---- /task ---
+--- /collapse ---
 
-It may take a moment, but when your program runs you should see something like the image below.
+--- collapse ---
+---
+title: Capturing an image from the user's camera — Other computers
+---
+You can use this function to capture an image using the `cv2` library. You'll need to decide where on your computer you want to store the image the camera records, so you can provide it to the classifer later. It makes sense to create a variable with that file path and pass it to both this function, and the image classification function.
 
-![White screen with the words 'Ready to play?' at the top of the page and a Play! button at the bottom of the page](images/app_start.png)
+```python
+import cv2
 
-Now that you have the game running, it's time to connect your model to it.
+def capture_image(image_file_path):
+    # Create a camera object to use to capture images
+    cam = cv2.VideoCapture(0)
+    # Caputre an image from the camera
+    frame = cam.read()[1]
+    # Adjust the image to be suitably coloured
+    # if you find the images are too dark, or bright, try changing beta
+    result = cv2.convertScaleAbs(frame, alpha = 1, beta = 60)
+    # Turn the result image into a file at image_file_path
+    cv2.imwrite(image_file_path, result)
+    # Get rid of the camera object
+    cam.release()
+```
+
+ + `image_file_path` is the path to where you want to store the captured image on your computer. This can be a relative path, like `captured_image.jpg`, or an absolute path, like `/Users/raspberry/projects/machine_vision/captured_image.jpg`. Note that on Windows, file paths use backslashes (`\`) instead of forward slashes (`/`) as separator.
+
+--- /collapse ---
+
+--- collapse ---
+---
+title: Asking the user for a file path
+---
+You can directly ask the user for a file path to an image using the built-in `input` function in Python.
+
+```python
+image_file_path = input("Where is your image file located?")
+```
+
+--- /collapse ---
+
+### Classifying an image with your model
+
+--- collapse ---
+---
+title: Loading the model
+---
+
+Move the model you created into the same directory as your Python program. Then you can load it into your program with this code:
+
+```python
+import tensorflow as tf
+model = tf.keras.models.load_model(model_name, compile=False)
+```
+ + `model_name` is the full name of the model file. It will probably look something like `keras_model.h5`.
+
+--- /collapse ---
+
+--- collapse ---
+---
+title: Classifying an image file
+---
+
+The classifier model takes an image file and returns an array of numbers. The size of the array is the same as the number of classes in your model, and the order of the array matches the order of the classes in Teachable Machine, from top to bottom. So you will need to create a list with the names of those classes, to let you display the result in a way your user can understand.
+
+```python
+import tensorflow as tf
+import numpy as np
+
+# A list of the classes from the Teachable Machine model, in the same order they appear there
+CLASSES = ['cat', 'dog', 'fish', 'frog']
+
+# The model expects an image that is a 224x224 pixel square
+# Just storing that number to use later
+IMAGE_SIZE = 224
+
+def get_image_class(image_file_path):
+    # Load the image and resize it
+    image = tf.keras.preprocessing.image.load_img(image_file_path, target_size=(IMAGE_SIZE, IMAGE_SIZE))
+    # Convert the image to an array of numbers
+    image = tf.keras.preprocessing.image.img_to_array(image)
+    # Expand the array to the shape the model expects
+    image = np.expand_dims(image, axis=0)
+    # Get a list of the model's prediction of how likely the image is to be each of the classes
+    prediction_result = model.predict(image)
+    # Get the position in the list of the most likely class
+    best_prediction = np.argmax(prediction_result[0])
+    # Look up the class name that appears in the same position in the CLASSES list
+    best_prediction_name = CLASSES[best_prediction]
+    return best_prediction_name
+```
+--- /collapse ---
+
+--- collapse ---
+---
+title: Outputting the classifcation result
+---
+
+Once you have the result, you can just use `print` to output it to your user.
+
+```python
+result = get_image_class(image_file_path)
+
+print(f"Your image looks like a {result}.")
+
+```
+--- /collapse ---

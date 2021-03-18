@@ -1,44 +1,40 @@
 ## Introduction
 
+Create a product — a tool, app, or website — that uses machine vision to do something cool.
+
+
 ### What you will make
-Create a game of rock, paper, scissors that you can play against the computer: you will make the gestures with your hands and have the computer recognise them. In this version of the game, the computer is going to cheat — it will recognise the player's move and choose the object that will beat it!
+You will use a pre-trained image classification model to build your product. You’ll combine this model with code for either:
+ + A web application, built with Flask
+ + A command-line tool
+ + A desktop application, built with guizero
 
-Essentially, you'll create a simpler version of the brain of this awesome robot.
+![An image of a desktop application, asking the user to provide an image for identification](images/initial_application.png)
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Qb5UIPeFClM?controls=0&amp;start=3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+### What you will learn
+You will learn:
+ + To build and train a model with Teachable Machine
+ + What to consider when providing training data to a model
+ + How to connect a model with a Python program you've made
 
---- collapse ---
----
-title: What you should already know
----
-This project assumes you already know some Python. Specifically, it assumes you know how to use:
-
-+ Variables
-+ Functions, including how to create your own function that accepts arguments
-+ The structure of a machine learning model — see [project 3](#) for details
-+ How to use the command line interface on your computer to navigate to a directory — see [project 4](#) for details
-
---- /collapse ---
+### What you should know
+To do this project, you should be familiar with:
+ + How to interact with a machine vision model, as covered in [Testing your computer’s vision](https://projects.raspberrypi.org/en/projects/testing-your-computers-vision)
+ + How to create and use variables, lists, conditional statements, and functions in Python
 
 --- collapse ---
 ---
 title: What you will need
 ---
+### Hardware
 
-+ A computer with a camera
-+ An internet connection
++ A computer with an internet connection
+
+### Software
+
++ Python 3
++ The pip Python package installer (usually included with Python 3), and permission to install Python packages on your computer
 + A Google account
-
---- /collapse ---
-
---- collapse ---
----
-title: What you will learn
----
-
-+ How to create and train a machine vision model quickly using Teachable Machine
-+ What you need to consider when you create a model to make sure that it works in practice
-+ How to include a model you've created in a desktop application
 
 --- /collapse ---
 
@@ -47,8 +43,6 @@ title: What you will learn
 title: Additional information for educators
 ---
 
-If you need to print this project, please use the [printer-friendly version](https://projects.raspberrypi.org/en/projects/trained-vision-app/print){:target="_blank"}.
-
-[Here is a link to the resources for this project](http://rpf.io/trained-vision-app-go).
+If you need to print this project, please use the [printer-friendly version](https://projects.raspberrypi.org/en/projects/amazing-image-identifier/print){:target="_blank"}.
 
 --- /collapse ---
