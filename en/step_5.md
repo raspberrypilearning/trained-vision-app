@@ -1,6 +1,6 @@
 ## Make your application
 
-The application you'll create as part of this project uses the model you've trained to classify an image that is either contained in a file stored on your computer, or captured from your comptuer's webcam. Because you're creating your own model 
+The application you'll create as part of this project uses the model you've trained to classify an image that is either contained in a file stored on your computer, or captured from your comptuer's webcam. Because you're creating your own model, you will need to have it downloaded from Teachable Machine (see 'Export your model' in the previous step) before you can complete the creation of your application.
 
 --- collapse ---
 ---

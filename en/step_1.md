@@ -9,7 +9,7 @@ You will combine a model you train using Google's Teachable Machine with a Pytho
  + Take a picture with a user's webcam and classify it, then share that classifcation with the user
  + Take an image file provided by the user, and classify it, then share that classifcation with the user
 
-[[HOW TO MAKE COOL IMAGE?]]
+![The teachable machine user interfact, with classes for the Taj Mahal, Stonehenge, and the Sydney Opera House shown](images/3_classes.png)
 
 ### What you will learn
 You will learn:

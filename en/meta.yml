@@ -12,5 +12,9 @@ steps:
   - title: Make your model
   - title: Make your application
   - title: Share
-  - title: Reflect
+  - title: Reflection
+    knowledge_quiz:
+      path: quiz1
+      questions: 3
+      passing_score: 3
 
