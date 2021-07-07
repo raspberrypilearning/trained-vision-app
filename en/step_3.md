@@ -1,6 +1,6 @@
 ## Get inspiration
 
-You can create a model to recognise whatever you want, which means that you have a lot of choices in what kind of classifers you can create! Think about that now and decide what  you might want to classify. Here are a few ideas to get you started:
+You can create a model to recognise whatever you want, which means that you have a lot of choices in what kind of classifiers you can create! Think about that now and decide what  you might want to classify. Here are a few ideas to get you started:
 
 + Different facial expressions
 + Different hand gestures
