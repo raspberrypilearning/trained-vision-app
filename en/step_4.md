@@ -3,7 +3,7 @@
 This project has two parts to it. First, build a model on Teachable Machine, then use that model in an application built on your computer. Teachable Machine is a tool made by Google that creates machine learning models in your browser. You can use it to create a model to recognise images, but it can also create models that recognise sounds or body poses.
 
 ### Create a model with classes
-Before you start to train a model, you need to decide how many different classes of image your model is able to recognise. You have to provide training data for each of these classes, so make sure you don't pick too large a number. Maybe start with fewer than five classes, and add more once you those ones work (if you need to).
+Before you start to train a model, you need to decide how many different classes of image your model is able to recognise. You have to provide training data for each of these classes, so make sure you don't pick too large a number. Maybe start with fewer than five classes and add more once you those ones work (if you need to).
 
 --- collapse ---
 ---
