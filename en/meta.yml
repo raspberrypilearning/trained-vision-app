@@ -7,12 +7,12 @@ copyedit: true
 last_tested: "2020-06-12"
 steps:
   - title: Introduction
-  - title: Get setup
+  - title: Get set up
   - title: Get inspiration
   - title: Make your model
   - title: Make your application
   - title: Share
-  - title: Reflection
+  - title: Reflect
     knowledge_quiz:
       path: quiz1
       questions: 3
