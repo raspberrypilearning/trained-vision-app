@@ -105,7 +105,7 @@ Spend some time testing your model's preview to see if it usually predicts thing
 --- /collapse ---
 
 ### Export your model
-Once your model works well enough — it will never be right all the time, but being right most of the time is pretty good — it's time to export the model so you can use it as part of your program.
+Once your model works well enough, it is time to export the model so you can use it as part of your program. Your model is unlikely to be right all the time, but being right most of the time is pretty good.
 
 --- collapse ---
 ---
