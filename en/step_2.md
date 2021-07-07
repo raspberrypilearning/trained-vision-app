@@ -1,47 +1,47 @@
-## Get setup
+## Get set up
 
 If you've never written Python on your computer before, you may need to install a programmer's text editor first.
 
 --- collapse ---
 ---
-title: Click here if you need to install a programmer's text editor
+title: Install a programmer's text editor
 ---
-There are lots of different programmer's text editors, and they are usually free, so most programmers try a few before finding their favourite. As you become more experienced, you should try different editors to see if there's one you enjoy using more than the others. For now, though, try one of the following:
+There are lots of different text editors; they are usually free, so most programmers try different editors before they find their favourite one. As you become more experienced, you should try different editors to see if you find one that you enjoy more than the others. For now, try one of the following:
 
-Use [Thonny](https://thonny.org/) if you do all your text-based programming in Python. It's got a lot of helpful features that work with Python to help you program correctly, and to investigate if your program isn't working as expected.
++ If you do all your text-based programming in Python, use [Thonny](https://thonny.org/). It has a lot of helpful features that work with Python to help you program correctly, and to investigate if your program does not work as expected.
 
-If you use a few different languages — for example, if you create web pages with HTML and CSS as well as Python applications — then [Visual Studio Code](https://code.visualstudio.com/) is a good choice. It offers less help for any particular language, but supports a lot of different languages.
++ If you use a few different languages — for example, if you create web pages with HTML and CSS as well as Python applications — then [Visual Studio Code](https://code.visualstudio.com/) is a good choice. It offers less help for any particular language, but supports a lot of different languages.
 
 --- /collapse ---
 
-For this project, you’ll also  need some library code. This is code written by other people and then provided to you so you don’t have to build all the parts of a program on your own. Python comes with a lot of libraries, but you’re going to need some extra ones. Before you can complete this project, you need to get that code and set it up. How you do this will vary based on your operating system.
-
+For this project, you also need some library code. This is code written by other people that you can use so you don’t have to build all the parts of a program on your own. Python comes with lots of libraries, but you also need some extra ones. Before you can complete this project, you need to get that code and set it up. Select your operating system below to find out how to set up your library code. 
 --- collapse ---
 ---
-title: For Windows
+title: Windows
 ---
 
-The command to install the libraries you need uses **pip**, a tool to fetch Python code written by other people from the internet and set it up so you can use it in your projects. It's important to use pip to install libraries, rather than just downloading them: some libraries need other libraries to work (these libraries are called their **dependencies**) and pip will automatically install those too.
+The command to install the libraries you need uses `pip`, a tool to fetch Python code written by other people from the internet and set up so you can use it in your projects. It is important to use `pip` to install libraries and not to just download them. This is because some libraries need other libraries to work (these libraries are called their **dependencies**) and `pip` automatically installs those too.
 
-Conveniently, pip can be given a list of all the libraries a project needs, and told to install them all at once. These are usually included in a file called `requirements.txt`.
+Conveniently, `pip` can be given a list of all the libraries a project needs, and told to install them all at once. These are usually included in a file called `requirements.txt`.
 
 --- task ---
-Download the [requirements.txt file for this project](#) to somewhere you'll remember on your computer. If you can't think of a location, just put it on your desktop. This isn't the best place to keep things in the long term, but it's fine when you're working on them.
+Download the [requirements.txt file for this project](#) to somewhere memorable on your computer. If you can't think of a location, just put it on your desktop. This isn't the best place to keep things in the long term, but it's fine when you're working on them.
 --- /task ---
 
-To install the libraries you'll use for this project, and later to run the project, you need to use the **command line interface** (CLI) — a program to control your computer by typing text commands into a window. The command line interface is called 'command prompt' in Windows.
+To install the libraries for this project, and later to run the project, you need to use the **command line interface** (CLI) — a program to control your computer by typing text commands into a window. The command line interface is called 'command prompt' in Windows.
 
-In the CLI, you don't access files by clicking to open them, or the directories (folders) they live in. You need to know the **path** to the file. It's like a set of directions, either from where you are currently located on the computer — called a **relative path** — or from the root of the computer's hard drive — called an **absolute path**. You'll need to find the path to the directory containing your `requirements.txt` file for this next step. If you saved it to your desktop, that's just a directory that the computer displays for you.
+In the CLI, you do not click to open and access files or the directories (folders) they live in. Instead, you need to know the **path** to the file. This is like a set of directions, either from where you are currently located on the computer — called a **relative path** — or from the root of the computer's hard drive — called an **absolute path**. You need to find the path to the directory that contains your `requirements.txt` file for this next step. If you saved it to your desktop, this is just a directory that the computer displays for you.
+
 
 #### How to find the path to a directory on Windows
 
-The easiest method is to open the folder in File Explorer, as you would normally do, and click into the navigation bar at the top of the window. The full path for the folder should become visible and you can then copy it.
+The easiest method is to open the folder in File Explorer and click into the navigation bar at the top of the window. The full path for the folder should become visible and you can then copy it.
 
-![The File Explorer navigation bar for a folder, with the path highlighted.](images/windows_path.png)
+![The File Explorer navigation bar for a folder, with the path highlighted in blue.](images/windows_path.png)
 
 --- task ---
 
-In the CLI, navigate to the directory you just unzipped by entering the following command — replace `[directory_path]` with the path to your directory. Then press the enter key to run the command.
+In the CLI, navigate to the directory you just unzipped by entering the following command — replace `[directory_path]` with the path to your directory. Then press the Enter key to run the command.
 
 ```batch
 cd [directory_path]
@@ -66,12 +66,12 @@ pip install -r requirements.txt
 
 --- collapse ---
 ---
-title: For macOS
+title: macOS
 ---
 
-To install the libraries you'll use in this project, you need to use the **command line interface** (CLI) — a program to control your computer by typing text commands into a window. The command line interface is called 'Terminal' in macOS. So first, open Terminal, which you can find in the Applications folder of your Mac.
+To install the libraries for this project, you need to use the **command line interface** (CLI) — a program to control your computer by typing text commands into a window. The command line interface is called 'Terminal' in macOS. So your first step is to open 'Terminal', which you can find in the 'Applications' folder of your Mac.
 
-Because installing libraries can be a complex process, a program to handle the installation for you has been created. Here are the [details of this program](http://rpf.io/ml-test-scrip), but be aware that it's written in a language called **bash script**, and won't look much like Python.
+It can be a complex process to install libraries, so a program to handle the installation for you has been created. Here are the [details of this program](http://rpf.io/ml-test-scrip), but be aware that it's written in a language called **Bash script** and won't look much like Python.
 
 --- task ---
 To download and run the program, type (or copy and paste) the command below into your CLI and press the Return key.
@@ -82,18 +82,18 @@ sudo curl -L http://rpf.io/ml-test-scrip | sudo bash -s $USER
 
 --- /task ---
 
-The script may take several minutes, or more, to complete the setup, depending on the speed of your computer and your internet connection. While this is happening, it will display a lot of messages. You don't need to worry about reading those — they're mostly just the program telling you what it's doing. You will know the peofem has completed its work when you get a new line on which you can enter commands in your terminal. You'll then be ready to move on with the rest of the project.
+The script may take several minutes, or more, to complete the setup, as this process depends on the speed of your computer and your internet connection. While this happens, lots of messages appear in the program. You don't need to worry about reading them — it is the program's way to tell you what it is doing. When the program has completed its work, you should see a new line on which you can enter commands in your terminal. Then you can move on with the rest of the project.
 
 --- /collapse ---
 
 --- collapse ---
 ---
-title: For Linux (including Raspberry Pi)
+title: Linux (includes Raspberry Pi)
 ---
 
-To install the libraries you'll use in this project, you need to use the **command line interface** (CLI) — a program to control your computer by typing text commands into a window. The command line interface is called 'Terminal' in Linux.
+To install the libraries for this project, you need to use the **command line interface** (CLI) — a program to control your computer by typing text commands into a window. The command line interface is called 'Terminal' in Linux.
 
-Because installing libraries can be a complex process, a program to handle the installation for you has been created. Here are the [details of this program](http://rpf.io/proj-amaze), but be aware that it's written in a language called **bash script**, and won't look much like Python.
+It can be a complex process to install libraries, so a program to handle the installation for you has been created. Here are the [details of this program](http://rpf.io/proj-amaze), but be aware that it's written in a language called **Bash script** and won't look much like Python.
 
 --- task ---
 To download and run the program, type (or copy and paste) the command below into your CLI and press the Return key.
@@ -104,8 +104,8 @@ curl -L http://rpf.io/proj-amaze | sudo bash -s $USER
 
 --- /task ---
 
-The script may take several minutes, or more, to complete the setup, depending on the speed of your computer and your internet connection. While this is happening, it will display a lot of messages. You don't need to worry about reading those — they're mostly just the program telling you what it's doing. You will know the peofem has completed its work when you get a new line on which you can enter commands in your terminal. You'll then be ready to move on with the rest of the project.
+The script may take several minutes, or more, to complete the setup, as this process depends on the speed of your computer and your internet connection. While this happens, lots of messages appear in the program. You don't need to worry about reading them — it is the program's way to tell you what it is doing. When the program has completed its work, you should see a new line on which you can enter commands in your terminal. Then you can move on with the rest of the project.
 
 --- /collapse ---
 
-While the libraries are installing — it can take quite some time depending on your internet connection — check out the "Get inspiration" section and start thinking about what you’re going to build. You can also move on to creating your model in Teachable Machine in this time.
+While you wait for the libraries to install — it may take quite some time — check out the next step, 'Get inspiration', to think about what you can build. You can also create your model in Teachable Machine in this time.
