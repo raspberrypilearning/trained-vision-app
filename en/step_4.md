@@ -90,7 +90,7 @@ To train the model, click the **Train Model** button. That was easy!
 
 ![**Train Model** button.](images/tm_train_model.png)
 
-The training takes a short time, during which you can watch Teachable Machine count the epochs it's running through. **You need to leave your browser open on the Teachable Machine tab, or the model will stop training.** 
+The training takes a short time, during which you can watch Teachable Machine count the epochs it runs through. **You need to leave your browser open on the Teachable Machine tab, otherwise the model stops training.** 
 
 --- /collapse ---
 
