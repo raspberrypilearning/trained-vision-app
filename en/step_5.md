@@ -45,7 +45,7 @@ Usually, programmers try to put all of their imports at the start of their progr
 
 --- collapse ---
 ---
-title: Capture an image from the user's camera — Raspberry Pi
+title: Capture an image from the user's camera (Raspberry Pi)
 ---
 You can use this function to capture an image using the `picamera` library. You may need to [set up the camera](https://projects.raspberrypi.org/en/projects/getting-started-with-picamera) before you can use it like this. You also need to decide where on your computer you want to store the image the camera records, so you can provide it to the classifier later. It makes sense to create a variable with that file path and pass it to both this function, and the image classification function.
 
@@ -69,7 +69,7 @@ def capture_image(image_file_path):
 
 --- collapse ---
 ---
-title: Capture an image from the user's camera — other computers
+title: Capture an image from the user's camera (other computers)
 ---
 You can use this function to capture an image using the `cv2` library. You need to decide where on your computer you want to store the image the camera records, so you can provide it to the classifier later. It makes sense to create a variable with that file path and pass it to both this function, and the image classification function.
 
