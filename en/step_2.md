@@ -15,6 +15,7 @@ There are lots of different text editors; they are usually free, so most program
 --- /collapse ---
 
 For this project, you also need some library code. This is code written by other people that you can use so you don’t have to build all the parts of a program on your own. Python comes with lots of libraries, but you also need some extra ones. Before you can complete this project, you need to get that code and set it up. Select your operating system below to find out how to set up your library code. 
+
 --- collapse ---
 ---
 title: Windows
