@@ -4,12 +4,12 @@ Create your own machine vision model and Python application to identify a user's
 
 
 ### What you will make
-You will combine a model you train using Google's Teachable Machine with a Python program you create on your computer, to build an application that can either:
+You will combine a model you have trained that uses Google's Teachable Machine with a Python program you have created on your computer. The application you build could:
 
- + Take a picture with a user's webcam and classify it, then share that classifcation with the user
- + Take an image file provided by the user, and classify it, then share that classifcation with the user
+ + Take a picture with a user's webcam and classify it, then share that classification with the user
+ + Take an image file provided by the user, and classify it, then share that classification with the user
 
-![The teachable machine user interfact, with classes for the Taj Mahal, Stonehenge, and the Sydney Opera House shown](images/3_classes.png)
+![The teachable machine user interfact, with classes for the Taj Mahal, Stonehenge, and the Sydney Opera House shown.](images/3_classes.png)
 
 ### What you will learn
 You will learn:
@@ -19,7 +19,7 @@ You will learn:
 
 ### What you should know
 To do this project, you should be familiar with:
- + How to interact with a machine vision model, as covered in [Testing your computer’s vision](https://projects.raspberrypi.org/en/projects/testing-your-computers-vision)
+ + How to interact with a machine vision model, as covered in the ['Testing your computer’s vision' project](https://projects.raspberrypi.org/en/projects/testing-your-computers-vision)
  + How to create and use variables, lists, conditional statements, and functions in Python
 
 --- collapse ---
@@ -33,7 +33,7 @@ title: What you will need
 ### Software
 
 + Python 3
-+ The pip Python package installer (usually included with Python 3), and permission to install Python packages on your computer
++ The `pip` Python package installer (usually included with Python 3), and permission to install Python packages on your computer
 + A Google account
 
 --- /collapse ---
