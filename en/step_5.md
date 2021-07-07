@@ -9,7 +9,7 @@ title: Create a Python program on your computer
 
 Open your programmer's text editor, create a  new file, and save it somewhere on your computer with a name that ends in `.py`. For example,  `project.py`.
 
-**Remember the path to the location of your saved progam. You need it to run the program later!**
+**Remember the path to the location of your saved program. You need it to run the program later!**
 --- /collapse ---
 
 --- collapse ---
