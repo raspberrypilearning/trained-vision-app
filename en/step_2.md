@@ -54,7 +54,7 @@ Now that you have a CLI in the right directory, you can run Python commands with
 
 --- task ---
 
-Run this command on your CLI to install the libraries you need. It may take a while to run, as it will have to download the libraries from the internet and some of them are quite large.
+Run this command on your CLI to install the libraries you need. It may take a while to run, as it has to download the libraries from the internet and some of them are quite large.
 
 ```bash
 pip install -r requirements.txt 
