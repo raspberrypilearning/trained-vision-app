@@ -29,7 +29,7 @@ You should replace `project.py` with whatever you call the file that your progra
 ---
 title: Include library code in your program
 ---
-Libraries are collections of code written by other programmers, which have been packaged so you can easily install them and then include them in your own programs. Several libraries you might find useful for this project were installed when you ran the setup script.
+Libraries are collections of code written by other programmers that have been packaged so you can easily install them and then include them in your own programs. Several libraries you might find useful for this project were installed when you ran the setup script.
 
 To use library code, you need to import it into your program, using import statements, like this:
 ```python
