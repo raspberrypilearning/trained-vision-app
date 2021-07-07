@@ -14,7 +14,7 @@ To get started, open the [Teachable Machine image model training page](https://t
 
 ![Teachable Machine training page](images/tm_start_screen.png)
 
-This is an untrained model, with two classes, so it will be able to recogise two things. You should use the pencil beside each class name to rename them, so they describe the things they'll recognise.
+This is an untrained model, with two classes, so it will be able to recognise two things. You should use the pencil beside each class name to rename them, so they describe the things they'll recognise.
 
 --- /collapse ---
 
@@ -45,7 +45,7 @@ To train the model you've created, you'll need to provide it with data for each 
 When providing training images for your model, there are some things you should consider:
 
  + Try to ensure that either the only thing that changes between your training images is the thing you want the model to focus on — say a specific hand gesture, or whether someone is wearing a hat, or that the training images come from a wide variety of contexts. What you should avoid is a situation where the images for one class have, for example, a blue wall in the background, while the images for another class are all taken outdoors in a park. The model may incorrectly learn blue wall or green grass as the clues to identify the classes, rather than the specific features you are trying to teach it.
- + For similar reasons, if you're trying to teach the model to recognise a gesture, or something about a person's appearance — if they're wearing a hat, their hair colour, etc., then you should make sure you either use the same person for all of your training data or, ideally, use a wide variety of people in the training data for every class. Models that are trained on a single gender, racial group, age group, or any other group of people that are visually similar, are weaker than those trainied on groups of people that are visually distinct. Likewise, if you are teaching the computer to recogise if someone is wearing a hat, it will learn better if shown many hats in different colours. The general rule is to try to expose the computer to the class you are trying to teach it in as many contexts as you can think of — within the limits of what's safe and practical for you to do!
+ + For similar reasons, if you're trying to teach the model to recognise a gesture, or something about a person's appearance — if they're wearing a hat, their hair colour, etc., then you should make sure you either use the same person for all of your training data or, ideally, use a wide variety of people in the training data for every class. Models that are trained on a single gender, racial group, age group, or any other group of people that are visually similar, are weaker than those trained on groups of people that are visually distinct. Likewise, if you are teaching the computer to recognise if someone is wearing a hat, it will learn better if shown many hats in different colours. The general rule is to try to expose the computer to the class you are trying to teach it in as many contexts as you can think of — within the limits of what's safe and practical for you to do!
 
 You will have to provide images for each of the classes in your model separately. This does mean that you can record images for one class with your webcam while uploading existing images for another class, if you have a collection of such images available.
 
@@ -74,7 +74,7 @@ Make sure to record at least 300 image samples, which should only take a few min
 title: Upload existing images
 ---
 
-Click on the **Upload** button for the class you want to train to show the upload controls. You'll see an option to upload images from your computer, or to use images stored in your Gooogle Drive. 
+Click on the **Upload** button for the class you want to train to show the upload controls. You'll see an option to upload images from your computer, or to use images stored in your Google Drive. 
 
 Choose whichever matches the location in which you've stored your images, and then use the dialogue that opens to select and upload the images that match the class.
 
