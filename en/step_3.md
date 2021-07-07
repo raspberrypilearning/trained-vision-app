@@ -1,6 +1,6 @@
 ## Get inspiration
 
-You can create a model that will recognise whatever you want to teach it about. So you've got a lot of choices in what kind of classifers you can create! Think about that now and decide what sorts of things you might want to classify. A few ideas might be:
+You can create a model to recognise whatever you want, which means that you have a lot of choices in what kind of classifers you can create! Think about that now and decide what  you might want to classify. Here are a few ideas to get you started:
 
 + Different facial expressions
 + Different hand gestures
@@ -9,4 +9,4 @@ You can create a model that will recognise whatever you want to teach it about. 
 + Cars
 + Sights around your area
 
-Remember that you'll need to provide traing data for each of these classes of image, so don't pick too many or you'll never finish!
+Remember that you need to provide training data for each of these classes of image. Make sure you don't pick too many or it may take you a very long time!
