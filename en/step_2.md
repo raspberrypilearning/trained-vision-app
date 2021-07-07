@@ -108,4 +108,4 @@ The script may take several minutes, or more, to complete the setup, as this pro
 
 --- /collapse ---
 
-While you wait for the libraries to install — it may take quite some time — check out the next step, 'Get inspiration', to think about what you can build. You can also create your model in Teachable Machine in this time.
+While you wait for the libraries to install — it may take quite some time — check out the next step, 'Get inspiration', to think about what you can build. You can also create your model in Teachable Machine while you wait.
