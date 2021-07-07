@@ -23,7 +23,7 @@ This is an untrained model with two classes, so it is able to recognise two thin
 title: Add more classes to your model
 ---
 
-You can add additional classes if you want your model to be able to recoginse more than two things. Click the **Add a class** button to add a third class to your model.
+You can add additional classes if you want your model to be able to recognise more than two things. Click the **Add a class** button to add a third class to your model.
 
 ![The **Add a class** button in Teachable Machine.](images/tm_add_class.png)
 
@@ -98,7 +98,7 @@ The training takes a short time, during which you can watch Teachable Machine co
 ---
 title: Test your model
 ---
-Spend some time testing your model's preview to see if it usually predicts things correctly. If you have trained it to recognise something, you can put in front of your computer's camera, then you can put different people in front of the camera, make different poses, or whatever you need to test it that way. If your model is trained for something you can't put in front of the camera easily, then you can upload some image files and have your model classify them to test it.  Make sure that those files were not part of the training data used for the model.
+Spend some time testing your model's preview to see if it usually predicts things correctly. If you have trained it to recognise something you can put in front of your computer's camera, then you can put different people in front of the camera, make different poses, or whatever you need to test it that way. If your model is trained for something you can't put in front of the camera easily, then you can upload some image files and have your model classify them to test it.  Make sure that those files were not part of the training data used for the model.
 
 ![The preview control, with the 'File' option selected.](images/tm_upload_preview.png)
 
