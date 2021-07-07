@@ -37,12 +37,12 @@ I used machine vision to identify the user's image
 
 --- task ---
 
-I communicated that identifiacation to the user
+I communicated that identification to the user
 
 --- /task ---
 
 --- task ---
 
-I shared my project, so that other people could try it
+I shared my project so that other people could try it
 
 --- /task ---
