@@ -9,7 +9,7 @@ You will combine a model you have trained with Google's Teachable Machine and a 
  + Take a picture with a user's webcam and classify it, then share that classification with the user
  + Take an image file provided by the user and classify it, then share that classification with the user
 
-![The teachable machine user interfact, with classes for the Taj Mahal, Stonehenge, and the Sydney Opera House shown.](images/3_classes.png)
+![The Teachable Machine user interfact, with classes for the Taj Mahal, Stonehenge, and the Sydney Opera House shown.](images/3_classes.png)
 
 ### What you will learn
 You will learn:
