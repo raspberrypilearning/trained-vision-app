@@ -35,7 +35,7 @@ title: Save your model
 ---
 Once you have changed something in your model, you can save it. To do this, use the menu in the top left-hand corner of the Teachable Machine window. Open it and click on the 'Save project to Drive' option. You need to be logged into a Google account to do this.
 
-![The Teachable Machine menu, with 'Save project to Drive' highlighted.](images/tm_save_to_drive.png)
+![The Teachable Machine menu, with 'Save project to Drive' highlighted in blue.](images/tm_save_to_drive.png)
 
 --- /collapse ---
 
@@ -100,7 +100,7 @@ title: Test your model
 ---
 Spend some time testing your model's preview to see if it usually predicts things correctly. If you have trained it to recognise something you can put in front of your computer's camera, then you can put different people in front of the camera, make different poses, or whatever you need to test it that way. If your model is trained for something you can't put in front of the camera easily, then you can upload some image files and have your model classify them to test it.  Make sure that those files were not part of the training data used for the model.
 
-![The preview control, with the 'File' option selected.](images/tm_upload_preview.png)
+![The preview control area, the 'File' option is selected.](images/tm_upload_preview.png)
 
 --- /collapse ---
 
@@ -118,7 +118,7 @@ Click the **Export Model** button in the 'Preview' section.
 
 In the screen that appears, select the 'Tensorflow' tab and, make sure that 'Model conversion type' is set to 'Keras', and click the **Download my model** button.
 
-![Tensorflow tab.](images/tm_download_model.png)
+![Tensorflow tab, the 'Keras' option is selected.](images/tm_download_model.png)
 
 **Make sure you remember where you save the model for you to use in a few minutes!**
 
