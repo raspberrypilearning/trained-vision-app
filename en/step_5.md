@@ -22,7 +22,7 @@ You can use the same command line interface (CLI) you used to install the softwa
 python project.py
 ```
 
-You should replace `project.py` with whatever you call the file that your program is written in.
+You should replace `project.py` with the name of the file that your program is written in.
 --- /collapse ---
 
 --- collapse ---
