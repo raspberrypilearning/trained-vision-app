@@ -1,6 +1,6 @@
 title: Rock, paper, scissors by hand
 hero_image: images/banner.png
-description: Use Google's Teachable Machine to build a rock, paper, scissors game controlled by hand gestures
+description: Combine a model trained using Google’s Teachable Machine with a Python program created on a computer to build an application.
 version: 4
 listed: true
 copyedit: true
