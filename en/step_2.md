@@ -26,7 +26,7 @@ The command to install the libraries you need uses `pip`, a tool to fetch Python
 Conveniently, `pip` can be given a list of all the libraries a project needs, and told to install them all at once. These are usually included in a file called `requirements.txt`.
 
 --- task ---
-Download the [requirements.txt file for this project](#) to somewhere memorable on your computer. If you can't think of a location, just put it on your desktop. This isn't the best place to keep things in the long term, but it's fine when you're working on them.
+Download the [requirements.txt file for this project](#) to somewhere memorable on your computer. If you can't think of a location, just put it on your desktop. This isn't the best place to keep things in the long term, but it's OK to keep files here while you work on them.
 --- /task ---
 
 To install the libraries for this project, and later to run the project, you need to use the **command line interface** (CLI) — a program to control your computer by typing text commands into a window. The command line interface is called 'command prompt' in Windows.
@@ -83,7 +83,7 @@ sudo curl -L http://rpf.io/ml-test-scrip | sudo bash -s $USER
 
 --- /task ---
 
-The script may take several minutes, or more, to complete the setup, as this process depends on the speed of your computer and your internet connection. While this happens, lots of messages appear in the program. You don't need to worry about reading them — it is the program's way to tell you what it is doing. When the program has completed its work, you should see a new line on which you can enter commands in your terminal. Then you can move on with the rest of the project.
+The script may take several minutes, or more, to complete the setup, as this process depends on the speed of your computer and your internet connection. While this happens, lots of messages appear in the program. You don't need to read them, this is just the program's way to let you know its actions. When the program has completed its work, you should see a new line on which you can enter commands in your terminal. Then you can move on with the rest of the project.
 
 --- /collapse ---
 
@@ -105,7 +105,7 @@ curl -L http://rpf.io/proj-amaze | sudo bash -s $USER
 
 --- /task ---
 
-The script may take several minutes, or more, to complete the setup, as this process depends on the speed of your computer and your internet connection. While this happens, lots of messages appear in the program. You don't need to worry about reading them — it is the program's way to tell you what it is doing. When the program has completed its work, you should see a new line on which you can enter commands in your terminal. Then you can move on with the rest of the project.
+The script may take several minutes, or more, to complete the setup, as this process depends on the speed of your computer and your internet connection. While this happens, lots of messages appear in the program. You don't need to read them, this is just the program's way to let you know its actions. When the program has completed its work, you should see a new line on which you can enter commands in your terminal. Then you can move on with the rest of the project.
 
 --- /collapse ---
 
