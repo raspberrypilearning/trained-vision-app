@@ -1,15 +1,18 @@
+---
 title: Rock, paper, scissors by hand
 hero_image: images/banner.png
-description: Use Google's Teachable Machine to build a rock, paper, scissors game controlled by hand gestures
+description: Use Google's Teachable Machine to build a rock, paper, scissors game
+  controlled by hand gestures
 version: 4
 listed: false
 copyedit: false
-last_tested: "2020-06-12"
+last_tested: '2020-06-12'
 steps:
-  - title: Introduction
-  - title: Get started with Teachable Machine
-  - title: Collect your training data
-  - title: Create your model
-  - title: Set up your game
-  - title: Connect your model to the game
-
+- title: Introduction
+  completion: engaged
+- title: Get started with Teachable Machine
+- title: Collect your training data
+- title: Create your model
+- title: Set up your game
+  completion: internal
+- title: Connect your model to the game
